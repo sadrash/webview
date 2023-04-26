@@ -109,7 +109,7 @@ class _WebViewExampleState extends State<WebViewExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(title: const Text('Flutter Simple Web')),
-      body: WebViewWidget(controller: controller),
+      body: SafeArea(child: WebViewWidget(controller: controller)),
     );
   }
 
